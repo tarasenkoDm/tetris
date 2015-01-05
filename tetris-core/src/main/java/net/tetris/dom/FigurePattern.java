@@ -2,9 +2,10 @@ package net.tetris.dom;
 
 public class FigurePattern {
     private String[] rows;
-    public String gift;
     private int centerX;
     private int centerY;
+    private String present = "Present";
+    private int javasample;
 
     public FigurePattern(int centerX, int centerY, String... rows) {
         this.rows = rows;
@@ -22,5 +23,9 @@ public class FigurePattern {
 
     public int getCenterY() {
         return centerY;
+    }
+
+    public String getPresent() {
+        return present;
     }
 }
